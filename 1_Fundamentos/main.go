@@ -1,14 +1,27 @@
-package main // define o programa principal
+package main
 
-import "fmt" // importa a biblioteca fmt para formatação de entrada e saída
+import "fmt"
 
-func main() { // função principal onde a execução do programa começa
+func main() {
+	// Tipo inteiro (int)
+	var idade int = 21
 
-	var peso int = 70         // declara uma variável inteira chamada peso e atribui o valor 70
-	var altura float64 = 1.75 // declara uma variável float64 chamada altura e atribui o valor 1.75
+	// Tipo float (números decimais)
+	var altura float64 = 1.65
 
-	fmt.Printf("Peso: %d kg\n", peso)      // imprime o peso formatado
-	fmt.Printf("Altura: %.2f m\n", altura) // imprime a altura formatada
+	// Tipo string (texto)
+	var nome string = "Gabriel"
 
-	fmt.Println("Hello, World!") // imprime "Hello, World!" no console
+	// Tipo boolean (verdadeiro ou falso)
+	var ativo bool = true
+
+	// Declaração curta (Go detecta o tipo automaticamente)
+	cidade := "Recife"
+
+	// Exibindo os valores
+	fmt.Println("Idade:", idade)
+	fmt.Println("Altura:", altura)
+	fmt.Println("Nome:", nome)
+	fmt.Println("Ativo:", ativo)
+	fmt.Println("Cidade:", cidade)
 }
